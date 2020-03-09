@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
                     Bundle bundle = new Bundle();
                     bundle.putString("p1Name", p1Name);
                     bundle.putString("p2Name", p2Name);
-                    startActivity(new Intent(MainActivity.this,TicTacToeActivity.class));
+                    startActivity(new Intent(MainActivity.this,TicTacToeActivity.class).putExtra("bundle",bundle));
                     playSound();
                 } else {
                     Log.d(TAG, "onClick: text missing");
